@@ -23,6 +23,7 @@ setup(name='env-yaml',
       description='Provides a yaml loader which substitutes '
                   'environment variables and supports defaults',
       long_description=long_description,
+      long_description_content_type='text/markdown',
 
       url='https://github.com/iamKunal/env-yaml-python',
       author='Kunal Gupta',
