@@ -7,8 +7,6 @@ on:
   release:
     types: [ published ]
 
-permissions:
-  contents: read
 jobs:
   build-publish:
     name: Build Package (publish if required)
@@ -18,6 +16,7 @@ jobs:
         python-version: [ "3.11" ]
     permissions:
       id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
