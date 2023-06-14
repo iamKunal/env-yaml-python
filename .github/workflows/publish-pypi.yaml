@@ -7,8 +7,8 @@ on:
   release:
     types: [ published ]
 
-
-contents: read
+permissions:
+  contents: read
 jobs:
   build-publish:
     name: Build Package (publish if required)
