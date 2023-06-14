@@ -28,7 +28,7 @@ setup(name='env-yaml',
       url='https://github.com/iamKunal/env-yaml-python',
       author='Kunal Gupta',
 
-      packages=find_packages(),
+      packages=find_packages('./src'),
 
       tests_require=tests_require,
       extras_require={
