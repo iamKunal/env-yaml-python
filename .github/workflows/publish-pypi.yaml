@@ -8,14 +8,14 @@ on:
     types: [ published ]
 
 
+contents: read
 jobs:
   build-publish:
-    name: upload release to PyPI
+    name: Build Package (publish if required)
     runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: [ "3.11" ]
-
     permissions:
       id-token: write
     steps:
